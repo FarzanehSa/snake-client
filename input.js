@@ -1,3 +1,5 @@
+const {movement, message} = require('./constants');
+
 // Stores the active TCP connection object.
 let connection;
 
@@ -18,31 +20,15 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function(key) {
-  switch (key) {
-  case '\u0003' : // exit by ctrl + c
+  // exit by ctrl + c
+  if (key === '\u0003') {
     process.exit();
-  case 'w' : // key to move up
-    connection.write('Move: up');
-    break;
-  case 'a' : // key to move left
-    connection.write('Move: left');
-    break;
-  case 's' : // key to move down
-    connection.write('Move: down');
-    break;
-  case 'd' : // key to move right
-    connection.write('Move: right');
-    break;
-  case 'l' : // key to message
-    connection.write('Say: Good Luck');
-    break;
-  case 'g' : // key to message
-    connection.write('Say: Good Game');
-    break;
-  case 'e' : // key to message
-    connection.write('Say: Enjoy the Game');
-    break;
   }
+  // response to movement or message input
+  if (movement[key] || message[key]) {
+    connection.write(movement[key] || message[key]);
+  }
+
 };
 
 module.exports = {setupInput};
