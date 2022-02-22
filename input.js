@@ -2,7 +2,7 @@
 let connection;
 
 // setup interface to handle user input from stdin
-const setupInput = function (conn) {
+const setupInput = function(conn) {
 
   connection = conn; // conn is a reference to the object, returned by connect()
 
@@ -17,32 +17,32 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const handleUserInput = function (key) {
-  // exit by ctrl + c
-  if (key === '\u0003') {
+const handleUserInput = function(key) {
+  switch (key) {
+  case '\u0003' : // exit by ctrl + c
     process.exit();
-  }
-  // key to move up
-  if (key === 'w') {
-    // console.log('Move: up');
-    connection.write('Move: up')
-  }
-  // key to move left
-  if (key === 'a') {
-    // console.log('Move: left');
+  case 'w' : // key to move up
+    connection.write('Move: up');
+    break;
+  case 'a' : // key to move left
     connection.write('Move: left');
-  }
-  // key to move down
-  if (key === 's') {
-    // console.log('Move: down');
+    break;
+  case 's' : // key to move down
     connection.write('Move: down');
-  }
-  // key to move right
-  if (key === 'd') {
-    // console.log('Move: right');
+    break;
+  case 'd' : // key to move right
     connection.write('Move: right');
+    break;
+  case 'l' : // key to message
+    connection.write('Say: Good Luck');
+    break;
+  case 'g' : // key to message
+    connection.write('Say: Good Game');
+    break;
+  case 'e' : // key to message
+    connection.write('Say: Enjoy the Game');
+    break;
   }
-  
 };
 
 module.exports = {setupInput};
