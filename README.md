@@ -9,8 +9,9 @@ Before you can run this client, you will need to be running the server side. by 
 
 ## Final Product
 
-![Snake-Server](https://user-images.githubusercontent.com/95319447/155261178-3ccdda59-90df-4608-99c2-4b0e12c77298.png)
-![Snake-Client](https://user-images.githubusercontent.com/95319447/155261156-578f91b2-1295-4b3c-9b5e-6784e62c6808.png)
+![Snake-Client](https://user-images.githubusercontent.com/95319447/155262028-4f345d88-b801-4794-baff-f968e6862880.png)
+![Snake-Server](https://user-images.githubusercontent.com/95319447/155262030-53fd051f-6216-461f-bc9f-d60ada72dde9.png)
+
 
 
 
