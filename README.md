@@ -13,8 +13,6 @@ Before you can run this client, you will need to be running the server side. by 
 ![Snake-Server](https://user-images.githubusercontent.com/95319447/155262030-53fd051f-6216-461f-bc9f-d60ada72dde9.png)
 
 
-
-
 ## Getting Started
 
 - Follow steps inside the snek server repo to run the server side
@@ -32,8 +30,3 @@ Before you can run this client, you will need to be running the server side. by 
   * **e**: Enjoy the Game
 - "Be Careful", Still there is Idel Timeout, after each movment you have 15 seconds.
 - Avoid walls and snake's body... 
-
-
-
-
- 
