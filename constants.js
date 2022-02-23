@@ -12,12 +12,12 @@ const movement = {  // control movement
   a: 'Move: left',
   s: 'Move: down',
   d: 'Move: right'
-}
+};
 
 const message = {  // send message to opponents
   l: 'Say: Good Luck',
   g: 'Say: Good Game',
   e: 'Say: Enjoy the Game'
-}
+};
 
 module.exports = {IP, PORT, Name, movement, message};
