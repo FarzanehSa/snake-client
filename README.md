@@ -28,5 +28,5 @@ Before you can run this client, you will need to be running the server side. by 
   * **l**: Good Luck
   * **g**: Good Game
   * **e**: Enjoy the Game
-- "Be Careful", Still there is Idel Timeout, after each movment you have 15 seconds.
+- "Be Careful", Still there is Idel Timeout, after each movement you have 15 seconds.
 - Avoid walls and snake's body... 
