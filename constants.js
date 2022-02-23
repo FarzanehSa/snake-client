@@ -2,8 +2,8 @@
 
 const IP = 'localhost'; // or IP address
 const PORT = 50541;     // PORT number
-// const Name = 'F07';     // Snake ID
-const Name = process.argv[2];     // Snake ID
+const Name = 'F07';     // Snake ID
+// const Name = process.argv[2];     // Snake ID
 
 
 
